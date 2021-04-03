@@ -37,9 +37,7 @@
 }
 
 .program__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  .list-reset()
 }
 
 .program__item {
@@ -56,7 +54,7 @@
 }
 
 .program__description {
-  font-family: "Arial";
+  font-family: @font-secondary;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.29;

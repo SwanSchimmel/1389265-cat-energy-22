@@ -7,14 +7,13 @@
 }
 
 .form__input {
+  font-family: inherit;
   border: 1px solid @special_grey-4;
   box-sizing: border-box;
 }
 
 .form__fields-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  .list-reset()
 }
 
 .form__fields-item {
@@ -43,7 +42,7 @@
 }
 
 .form__necessarily {
-  font-family: "Arial";
+  font-family: @font-secondary;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.14;
