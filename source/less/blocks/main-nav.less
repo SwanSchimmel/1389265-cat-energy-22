@@ -23,26 +23,26 @@
   text-decoration: none;
 }
 
-@media (min-width: @tablet-width) {
-  .main-nav__wrapper {
+
+.main-nav__wrapper {
+  @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 705px;
     margin: 0 auto;
- }
+  }
 
- @media (min-width: @desktop-width) {
-  .main-nav__wrapper {
+  @media (min-width: @desktop-width) {
     width: 1220px;
   }
 }
 
 .main-nav__toggle {
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     display: none;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     display: none;
   }
 }
