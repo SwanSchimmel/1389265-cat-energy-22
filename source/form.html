@@ -34,7 +34,8 @@
           <h2 class="questionnaire__title">Подбор программы</h2>
           <p class="questionnaire__description">Заполните анкету, и мы подберем
             программу питания для вашего кота</p>
-
+            <div class="questionnaire__container-main">
+            <div class="questionnaire__container">
             <p>
               <label class="form__description" for="form__name__id">ИМЯ:*</label>
               <input class="form__input" type="text" name="name" id="form__name__id" placeholder="БАРСИК" required>
@@ -47,34 +48,44 @@
               <label class="form__description" for="form__age__id">ВОЗРАСТ(ЛЕТ):</label>
               <input class="form__input" type="number" name="age" id="form__age__id" placeholder="7">
             </p>
-
-            <ul class="form__fields-list">
-              <li class="form__fields-item">
+          </div>
+          <div class="questionnaire__container">
+            <ul class="questionnaire__fields-list">
+              <li class="questionnaire__fields-item">
                <input class="form__input" type="radio" name="cat" value="slimming" id="filter-slim" checked>
                <label class="form__description" for="filter-slim">похудение</label>
               </li>
-              <li class="form__fields-item">
+              <li class="questionnaire__fields-item">
                 <input class="form__input" type="radio" name="cat" value="mass" id="filter-mass">
                <label class="form__description" for="filter-mass">Набор массы</label>
               </li>
-              <li class="form__fields-item">
+              <li class="questionnaire__fields-item">
                 <input class="form__input" type="radio" name="cat" value="dont-know" id="filter-dont-know">
                <label class="form__description" for="filter-dont-know-">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </div>
+        </div>
+          </div>
+
         </section>
         <fieldset class="host-contacts">
           <legend class="host-contacts__title host-contacts__title--line">Контактные данные
             (владельца кота)</legend>
+            <div class="host-contacts__container-main">
+            <div class="host-contacts__container">
             <p>
               <label class="form__description" for="host-contacts__email__id">E-mail:*</label>
               <input class="form__input form__input--icon" type="email" name="email" id="host-contacts__email__id" placeholder="kuklachev@gmail.com" required>
             </p>
+          </div>
+          <div class="host-contacts__container">
             <p>
               <label class="form__description" for="host-contacts__tel__id">Телефон:*</label>
               <input class="form__input form__input--tel" type="tel" name="tel" id="host-contacts__tel__id" placeholder="kuklachev@gmail.com" required>
             </p>
+          </div>
+        </div>
             <h2 class="host-contacts__title host-contacts__title--line">Комментарий</h2>
             <p>
               <textarea class="host-contacts__text" name="text" id="contact-form-text" placeholder="Расскажите обо всех повадках кота"></textarea>
