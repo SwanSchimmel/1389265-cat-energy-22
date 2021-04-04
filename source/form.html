@@ -27,11 +27,14 @@
 
       <h1 class="visually-hidden">Кэт энерджи - функциональное
         питание для котов</h1>
+        <form class="questionnaire__form form" method="GET" action="https://echo.htmlacademy.ru">
+          <div class="form__wrapper">
         <section class="questionnaire">
+          <div class="questionnaire__wrapper">
           <h2 class="questionnaire__title">Подбор программы</h2>
           <p class="questionnaire__description">Заполните анкету, и мы подберем
             программу питания для вашего кота</p>
-          <form class="questionnaire__form form" method="GET" action="https://echo.htmlacademy.ru">
+
             <p>
               <label class="form__description" for="form__name__id">ИМЯ:*</label>
               <input class="form__input" type="text" name="name" id="form__name__id" placeholder="БАРСИК" required>
@@ -47,19 +50,19 @@
 
             <ul class="form__fields-list">
               <li class="form__fields-item">
-               <input class="form__input" type="radio" name="slimming" value="slimming" id="filter-slim" checked>
+               <input class="form__input" type="radio" name="cat" value="slimming" id="filter-slim" checked>
                <label class="form__description" for="filter-slim">похудение</label>
               </li>
               <li class="form__fields-item">
-                <input class="form__input" type="radio" name="massing" value="mass" id="filter-mass">
+                <input class="form__input" type="radio" name="cat" value="mass" id="filter-mass">
                <label class="form__description" for="filter-mass">Набор массы</label>
               </li>
               <li class="form__fields-item">
-                <input class="form__input" type="radio" name="dont-know" value="dont-know" id="filter-dont-know">
+                <input class="form__input" type="radio" name="cat" value="dont-know" id="filter-dont-know">
                <label class="form__description" for="filter-dont-know-">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
-
+          </div>
         </section>
         <fieldset class="host-contacts">
           <legend class="host-contacts__title host-contacts__title--line">Контактные данные
@@ -98,9 +101,13 @@
             </li>
           </ul>
         </fieldset>
-        <button class="form__button button" type="submit">отправить заявку</button>
+        <div class="form__container">
+          <button class="form__button button" type="submit">отправить заявку</button>
+          <small class="form__necessarily">* — Обязательные поля</small>
+       </div>
+      </div>
       </form>
-        <small class="form__necessarily">* — Обязательные поля</small>
+
 
     </main>
 
