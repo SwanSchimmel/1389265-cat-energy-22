@@ -8,6 +8,17 @@
 
 .in-work__list {
   .list-reset();
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: (4, 1fr);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: (4, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .in-work__item {
@@ -16,4 +27,15 @@
   font-size: 14px;
   line-height: 1.29;
   color: @special_dark-grey;
+}
+
+.in-work__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: auto;
+    max-width: 1220px;
+  }
 }
