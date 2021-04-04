@@ -1,5 +1,16 @@
 .contacts {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .contacts__appeal {
@@ -15,4 +26,6 @@
   font-size: 14px;
   line-height: 20px;
   color: @special_dark-grey;
+  margin: 0;
+  padding: 0;
 }

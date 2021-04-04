@@ -10,14 +10,17 @@
   .list-reset();
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: (4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 153px;
   }
 
   @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: (4, 1fr);
-    column-gap: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -27,6 +30,10 @@
   font-size: 14px;
   line-height: 1.29;
   color: @special_dark-grey;
+
+  @media (min-width: @tablet-width) {
+    width: 230px;
+  }
 }
 
 .in-work__wrapper {
