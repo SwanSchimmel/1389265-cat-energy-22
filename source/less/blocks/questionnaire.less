@@ -1,17 +1,36 @@
 .questionnaire__title {
   color: @basic_black;
-  font-style: normal;
   font-weight: normal;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
 }
 
 .questionnaire__description {
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
   text-transform: uppercase;
   color: @basic_black;
 }
 
+.questionnaire__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: auto;
+    max-width: 1220px;
+  }
+}
+
+.questionnaire__fields-list {
+  .list-reset();
+}
+
+.questionnaire__container-main {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

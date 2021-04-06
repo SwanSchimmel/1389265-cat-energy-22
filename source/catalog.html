@@ -2,22 +2,23 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи</title>
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="page-header">
       <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image page-header__logo-mini" src="img/logo-mini.svg" width="33" height="38" alt="лого кота">
-        <img class="page-header__logo-text" src="img/logo-2.svg" width="101" height="18" alt="Кэт энерджи">
+        <img class="page-header__logo-mini" src="img/main-logo-mini.svg" width="191" height="38" alt="Кэт энерджи">
+        <img class="page-header__logo-image" src="img/logo-tablet.svg" width="174" height="52" alt="Кэт энерджи">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active"><a>главная</a></li>
-            <li class="main-nav__item"><a href="#">каталог продукции</a></li>
-            <li class="main-nav__item"><a href="#">подбор программы</a></li>
+            <li class="main-nav__item"><a href="index.html">главная</a></li>
+            <li class="main-nav__item main-nav__item--active"><a>каталог продукции</a></li>
+            <li class="main-nav__item"><a href="form.html">подбор программы</a></li>
           </ul>
         </div>
       </nav>
@@ -28,6 +29,7 @@
         питание для котов</h1>
 
       <section class="catalog">
+        <div class="catalog__wrapper">
         <h2 class="catalog__title">Каталог продукции</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
@@ -49,7 +51,7 @@
                 <td>700 Р.</td>
               </tr>
             </table>
-            <a class="catalog__link" href="#">заказать</a>
+            <a class="catalog__link button" href="#">заказать</a>
           </li>
           <li class="catalog__item">
             <img class="catalog__pic" src="img/catalog/catalog-2-desktop.png" width="84" height="100" alt="кэт энерджи курица">
@@ -70,7 +72,7 @@
                 <td>1000 Р.</td>
               </tr>
             </table>
-            <a class="catalog__link" href="#">заказать</a>
+            <a class="catalog__link button" href="#">заказать</a>
           </li>
           <li class="catalog__item">
             <img class="catalog__pic" src="img/catalog/catalog-3-desktop.png" width="68" height="78" alt="кэт энерджи курица">
@@ -91,7 +93,7 @@
                 <td>700 Р.</td>
               </tr>
             </table>
-            <a class="catalog__link" href="#">заказать</a>
+            <a class="catalog__link button" href="#">заказать</a>
           </li>
           <li class="catalog__item">
             <img class="catalog__pic" src="img/catalog/catalog-4-desktop.png" width="84" height="100" alt="кэт энерджи курица">
@@ -112,7 +114,7 @@
                 <td>1000 Р.</td>
               </tr>
             </table>
-            <a class="catalog__link" href="#">заказать</a>
+            <a class="catalog__link button" href="#">заказать</a>
           </li>
           <li class="catalog__item">
             <img class="catalog__pic" src="img/catalog/catalog-5-desktop.png" width="68" height="78" alt="кэт энерджи курица">
@@ -133,7 +135,7 @@
                 <td>400 Р.</td>
               </tr>
             </table>
-            <a class="catalog__link" href="#">заказать</a>
+            <a class="catalog__link button" href="#">заказать</a>
           </li>
           <li class="catalog__item">
             <img class="catalog__pic" src="img/catalog/catalog-6-desktop.png" width="84" height="100" alt="кэт энерджи курица">
@@ -154,7 +156,7 @@
                 <td>700 Р.</td>
               </tr>
             </table>
-            <a class="catalog__link" href="#">заказать</a>
+            <a class="catalog__link button" href="#">заказать</a>
           </li>
           <li class="catalog__item">
             <img class="catalog__pic" src="img/catalog/catalog-7-desktop.png" width="72" height="84" alt="кэт энерджи курица">
@@ -180,12 +182,15 @@
           <li class="catalog__item catalog__item--more">
             <b class="catalog__description">Показать еще 100500 товаров</b>
             <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
-            <a class="catalog__link__all" href="#">показать все</a>
+            <a class="catalog__link__all button" href="#">показать все</a>
           </li>
         </ul>
+        </div>
       </section>
       <section class="additional">
+        <div class="additional__wrapper">
         <h2 class="additional__title">Дополнительные товары</h2>
+        <div class="additional__container">
         <ul class="additional__list">
           <li class="additional__item">
             <b class="additional__product">Сахарозаменитель</b>
@@ -195,7 +200,7 @@
                 <td>200 Р.</td>
               </tr>
             </table>
-            <a class="additional__link" href="#">заказать</a>
+            <a class="additional__link button" href="#">заказать</a>
           </li>
           <li class="additional__item">
             <b class="additional__product">питьевая вода</b>
@@ -205,7 +210,7 @@
                 <td>50 Р.</td>
               </tr>
             </table>
-            <a class="additional__link" href="#">заказать</a>
+            <a class="additional__link button" href="#">заказать</a>
           </li>
           <li class="additional__item">
             <b class="additional__product">молоко</b>
@@ -215,7 +220,7 @@
                 <td>100 Р.</td>
               </tr>
             </table>
-            <a class="additional__link" href="#">заказать</a>
+            <a class="additional__link button" href="#">заказать</a>
           </li>
           <li class="additional__item">
             <b class="additional__product">витамины</b>
@@ -225,19 +230,23 @@
                 <td>300 Р.</td>
               </tr>
             </table>
-            <a class="additional__link" href="#">заказать</a>
+            <a class="additional__link button" href="#">заказать</a>
           </li>
-          <li class="additional__item additional__item--icon">
+        </ul>
+          <div class="additional__item-gift additional__item-gift--icon">
             <p class="additional__gift">Закажите все
               и получите чехол для
               кота в подарок!</p>
-          </li>
-        </ul>
+            </div>
+          </div>
+
+      </div>
       </section>
     </main>
 
 
-      <footer class="page-footer">
+    <footer class="page-footer">
+      <div class="page-footer__part-one">
         <div class="page-footer__wrapper">
           <div class="page-footer__contacts contacts">
             <b class="contacts__appeal">приглашаем
@@ -246,25 +255,31 @@
                 Конюшенная, д. 19/8
                 Санкт-Петербург</p>
           </div>
-          <div class="page-footer__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716385132!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616921307236!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-            <a class="page-footer__logo" href="#">
-              <img class="page-footer__logo-image page-footer__logo-mini" src="img/footer-logo.svg" width="128" height="24" alt="кэт энерджи">
-            </a>
-
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item"><a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><img src="../source/img/icons/icon_vkontakte.svg" width="22" height="22" alt="vk"></a></li>
-              <li class="social__item"><a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><img src="../source/img/icons/icon_instagram.svg" width="16" height="16" alt="instagram"></a></li>
-              <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><img src="../source/img/icons/icon_facebook.svg" width="23" height="16" alt="facebook"></a></li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <p class="copyright__text">HTML Academy</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/Лого_html.svg" alt="HTML Academy"></a>
-          </div>
         </div>
-      </footer>
+      </div>
+        <div class="page-footer__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716385132!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617542037048!5m2!1sru!2sru" width="100%" height="400" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="page-footer__part-two">
+          <div class="page-footer__wrapper">
+          <a class="page-footer__logo" href="#">
+            <img class="page-footer__logo-image page-footer__logo-mini" src="img/footer-logo.svg" width="128" height="24" alt="кэт энерджи">
+          </a>
+
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><img src="img/icons/icon_vkontakte.svg" width="22" height="22" alt="vk"></a></li>
+            <li class="social__item"><a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><img src="img/icons/icon_instagram.svg" width="16" height="16" alt="instagram"></a></li>
+            <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><img src="img/icons/icon_facebook.svg" width="23" height="16" alt="facebook"></a></li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">HTML Academy</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/Лого_html.svg" alt="HTML Academy"></a>
+        </div>
+       </div>
+     </div>
+      </div>
+    </footer>
     </body>
 </html>

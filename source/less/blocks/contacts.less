@@ -1,20 +1,26 @@
 .contacts {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .contacts__appeal {
-  font-style: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.125;
   text-transform: uppercase;
   color: @special_dark-grey-3;
 }
 
 .contacts__address {
-  font-family: "Arial";
-  font-style: normal;
+  font-family: @font-secondary;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: @special_dark-grey;
+  margin: 0;
+  padding: 0;
 }

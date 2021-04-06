@@ -3,47 +3,53 @@
 }
 
 .example__title {
-  font-style: normal;
   font-weight: normal;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.1;
   color: @basic_black;
 }
 
 .example__description {
-  font-family: "Arial";
-  font-style: normal;
+  font-family: @font-secondary;
   font-weight: normal;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
   color: @special_dark-grey;
 }
 
 .example__heading {
-  font-style: normal;
   font-weight: normal;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
   text-align: center;
   color: @basic_black;
 }
 
 .example__cell {
-  font-family: "Arial";
-  font-style: normal;
+  font-family: @font-secondary;
   font-weight: normal;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 1;
   text-align: center;
   color: @special_dark-grey;
 }
 
 .example__price {
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.43;
   text-align: center;
   text-transform: uppercase;
   color: @basic_black;
+}
+
+.example__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: auto;
+    max-width: 1220px;
+  }
 }

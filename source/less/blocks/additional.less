@@ -1,24 +1,26 @@
 .additional__title {
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   text-align: center;
   text-transform: uppercase;
   color: @special_dark-grey-3;
 }
 
 .additional__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  .list-reset();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .additional__product {
-  font-style: normal;
   font-size: 16px;
   font-weight: normal;
-  line-height: 16px;
+  line-height: 1;
   display: flex;
   align-items: center;
   text-align: center;
@@ -27,11 +29,10 @@
 }
 
 .additional__table {
-  font-family: "Arial";
-  font-style: normal;
+  font-family: @font-secondary;
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   display: flex;
   align-items: center;
   text-align: center;
@@ -46,7 +47,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   display: flex;
   align-items: center;
   text-align: center;
@@ -55,20 +56,38 @@
   justify-content: center;
 }
 
-.additional__item--icon {
+.additional__item-gift {
   background-image: url("../img/catalog/gift-photo-mini.png");
   width: 280px;
   height: 289px;
 }
 
 .additional__gift {
-  font-family: "Arial";
-  font-style: normal;
+  font-family: @font-secondary;
   font-weight: normal;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   display: flex;
   align-items: center;
   text-align: center;
   color: @basic_white;
+}
+
+.additional__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: auto;
+    max-width: 1220px;
+  }
+}
+
+.additional__container {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: max-content min-content;
+    column-gap: 79px;
+  }
 }

@@ -1,13 +1,20 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  width: 281px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 163px;
+    margin: 0;
+  }
 }
 
 .copyright__text {
-  font-family: "Arial";
-  font-style: normal;
+  font-family: @font-secondary;
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.125;
   color: @special_dark-grey;
+  text-decoration: none;
 }
