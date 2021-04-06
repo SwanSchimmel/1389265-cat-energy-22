@@ -1,6 +1,7 @@
 .program__header {
   background-image: url("../img/cat-top.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .program__point {
@@ -39,15 +40,14 @@
 
 .program__list {
   .list-reset();
+  display: grid;
+  gap: 20px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    gap: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
   }
