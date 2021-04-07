@@ -1,33 +1,138 @@
 .main-nav {
   position: relative;
   width: auto;
+  margin-top: 42px;
 }
 
 .main-nav__list {
   .list-reset();
 
   @media (min-width: @tablet-width) {
-    width: 440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
-    width: 478px;
+  }
+}
+
+.main-nav__item__index {
+  @media (min-width: @desktop-width) {
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -8;
+        left: 0;
+        height: 3px;
+        background: @basic_white;
+      }
+    }
+  }
+}
+
+.main-nav__item {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+      position: relative;
+    }
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -8;
+        left: 0;
+        height: 3px;
+        background: @basic_green;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -8;
+        left: 0;
+        height: 3px;
+        background: @basic_white;
+      }
+    }
+
   }
 }
 
 .main-nav__list a {
   display: block;
   position: relative;
-  padding: 24px 70px;
+  padding: 24px;
   color: @basic_black;
   font-weight: 500;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 1px;
   text-transform: uppercase;
   text-decoration: none;
   border-top: 1px solid @special_grey-7;
-}
+  text-align: center;
 
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.33;
+    border-top: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: @basic_white;
+  }
+}
 
 .main-nav__wrapper {
   @media (min-width: @tablet-width) {
@@ -44,7 +149,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -41px;
+  top: 23px;
   right: 25px;
   z-index: 2;
   display: block;
@@ -75,7 +180,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: -41px;
+  top: 23px;
   right: 25px;
 
   &::before,
