@@ -2,6 +2,8 @@
   background-image: url("../img/cat-top.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 437px;
+  width: 320px;
 }
 
 .program__point {
@@ -36,6 +38,7 @@
   width: 280px;
   height: 40px;
   font-family: inherit;
+  margin-bottom: 22px;
 }
 
 .program__list {
@@ -55,6 +58,33 @@
 
 .program__item {
   background-color: @basic_grey;
+  position: relative;
+
+  &--slim {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: 8px;
+      background-image: url("../../img/index/cat_back.png");
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 53px;
+    }
+  }
+
+  &--pro {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: 3px;
+      background-image: url("../../img/index/cat_back-2.png");
+      background-repeat: no-repeat;
+      width: 67px;
+      height: 50px;
+    }
+  }
 }
 
 .program__title {
