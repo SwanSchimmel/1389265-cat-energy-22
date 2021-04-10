@@ -32,21 +32,20 @@
         <form class="questionnaire__form form" method="GET" action="https://echo.htmlacademy.ru">
           <div class="form__wrapper">
         <section class="questionnaire">
-          <div class="questionnaire__wrapper">
           <h2 class="questionnaire__title">Подбор программы</h2>
           <p class="questionnaire__description">Заполните анкету, и мы подберем
             программу питания для вашего кота</p>
             <div class="questionnaire__container-main">
             <div class="questionnaire__container">
-            <p>
+            <p class="form__container-paragraph">
               <label class="form__description" for="form__name__id">ИМЯ:*</label>
               <input class="form__input" type="text" name="name" id="form__name__id" placeholder="БАРСИК" required>
             </p>
-            <p>
+            <p class="form__container-paragraph">
               <label class="form__description" for="form__weight__id">ВЕС(КГ):*</label>
               <input class="form__input" type="number" name="weight" id="form__weight__id" placeholder="7" required>
             </p>
-            <p>
+            <p class="form__container-paragraph">
               <label class="form__description" for="form__age__id">ВОЗРАСТ(ЛЕТ):</label>
               <input class="form__input" type="number" name="age" id="form__age__id" placeholder="7">
             </p>
@@ -54,21 +53,21 @@
           <div class="questionnaire__container">
             <ul class="questionnaire__fields-list">
               <li class="questionnaire__fields-item">
-               <input class="form__input" type="radio" name="cat" value="slimming" id="filter-slim" checked>
-               <label class="form__description" for="filter-slim">похудение</label>
+               <input class="form__input-radio visually-hidden" type="radio" name="cat" value="slimming" id="filter-slim" checked>
+               <label class="form__description form__description--decoration" for="filter-slim">похудение</label>
               </li>
               <li class="questionnaire__fields-item">
-                <input class="form__input" type="radio" name="cat" value="mass" id="filter-mass">
-               <label class="form__description" for="filter-mass">Набор массы</label>
+                <input class="form__input-radio visually-hidden" type="radio" name="cat" value="mass" id="filter-mass">
+               <label class="form__description form__description--decoration" for="filter-mass">Набор массы</label>
               </li>
               <li class="questionnaire__fields-item">
-                <input class="form__input" type="radio" name="cat" value="dont-know" id="filter-dont-know">
-               <label class="form__description" for="filter-dont-know-">Не знаю (Нужен ваш совет)</label>
+                <input class="form__input-radio visually-hidden" type="radio" name="cat" value="dont-know" id="filter-dont-know">
+               <label class="form__description form__description--decoration" for="filter-dont-know">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </div>
         </div>
-          </div>
+
 
         </section>
         <fieldset class="host-contacts">
@@ -76,13 +75,13 @@
             (владельца кота)</legend>
             <div class="host-contacts__container-main">
             <div class="host-contacts__container">
-            <p>
+            <p class="form__container-paragraph">
               <label class="form__description" for="host-contacts__email__id">E-mail:*</label>
               <input class="form__input form__input--icon" type="email" name="email" id="host-contacts__email__id" placeholder="kuklachev@gmail.com" required>
             </p>
           </div>
           <div class="host-contacts__container">
-            <p>
+            <p class="form__container-paragraph">
               <label class="form__description" for="host-contacts__tel__id">Телефон:*</label>
               <input class="form__input form__input--tel" type="tel" name="tel" id="host-contacts__tel__id" placeholder="kuklachev@gmail.com" required>
             </p>
@@ -97,20 +96,20 @@
           <legend class="additionally__title additionally__title--line">Дополнительно</legend>
           <ul class="form__fields-list">
             <li class="form__fields-item">
-             <input class="form__field form__field--checkbox" type="checkbox" name="sugar" id="filter-sugar" checked>
-             <label class="form__description" for="filter-sugar">сахарозаменитель</label>
+             <input class="visually-hidden form__field form__field--checkbox" type="checkbox" name="sugar" id="filter-sugar" checked>
+             <label class="form__description form__description--checkbox" for="filter-sugar">сахарозаменитель</label>
             </li>
             <li class="form__fields-item">
-              <input class="additionally__checkbox" type="checkbox" name="water" id="filter-water">
-             <label class="form__description" for="filter-water">питьевая вода</label>
+              <input class="visually-hidden form__field form__field--checkbox" type="checkbox" name="water" id="filter-water">
+             <label class="form__description form__description--checkbox" for="filter-water">питьевая вода</label>
             </li>
             <li class="form__fields-item">
-              <input class="additionally__checkbox" type="checkbox" name="milk" id="filter-milk">
-             <label class="form__description" for="filter-milk">молоко</label>
+              <input class="visually-hidden form__field form__field--checkbox" type="checkbox" name="milk" id="filter-milk">
+             <label class="form__description form__description--checkbox" for="filter-milk">молоко</label>
             </li>
             <li class="form__fields-item">
-              <input class="additionally__checkbox" type="checkbox" name="vitamins" id="filter-vitamins">
-             <label class="form__description" for="filter-vitamins">витамины</label>
+              <input class="visually-hidden form__field form__field--checkbox" type="checkbox" name="vitamins" id="filter-vitamins">
+             <label class="form__description form__description--checkbox" for="filter-vitamins">витамины</label>
             </li>
           </ul>
         </fieldset>
@@ -163,5 +162,21 @@
      </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
     </body>
 </html>
