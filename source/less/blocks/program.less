@@ -18,6 +18,7 @@
   line-height: 1;
   text-align: center;
   color: @basic_white;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -53,7 +54,17 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../../img/index/index-can.png");
+    display: none;
+  }
+}
+
+.program__pic-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 552px;
+    height: 499px;
   }
 }
 
