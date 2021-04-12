@@ -1,35 +1,6 @@
 .page-footer__part-two {
   background-color: @basic_grey;
   width: auto;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    border: 1px solid @special_grey-8;
-    top: 72px;
-    left: 18px;
-    width: 280px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    border: 1px solid @special_grey-8;
-    top: 148px;
-    left: 18px;
-    width: 280px;
-  }
-
-  @media (min-width: @tablet-width) {
-    &::after {
-      display: none;
-    }
-
-    &::before {
-      display: none;
-    }
-  }
 }
 
 .page-footer__wrapper {
@@ -80,5 +51,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+.page-footer__social {
+  border-top: solid @special_grey-8 2px;
+  border-bottom: solid @special_grey-8 2px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
