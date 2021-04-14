@@ -31,8 +31,15 @@
     top: 14px;
     left: 0;
     height: 2px;
-    width: 320px;
+    width: 298px;
     background-color: @basic_green;
     z-index: -1;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      width: 768px;
+      left: -32px;
+    }
   }
 }

@@ -20,6 +20,10 @@
   display: inline-flex;
   background-color: @basic_white;
   padding-right: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 38px;
+  }
 }
 
 .host-contacts__title--line {
@@ -30,9 +34,15 @@
     top: 14px;
     left: 0;
     height: 2px;
-    width: 320px;
+    width: 298px;
     background-color: @basic_green;
     z-index: -1;
+  }
+  @media (min-width: @tablet-width) {
+    &::after {
+      width: 768px;
+      left: -32px;
+    }
   }
 }
 

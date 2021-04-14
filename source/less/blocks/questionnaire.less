@@ -12,6 +12,10 @@
 
 .questionnaire__form {
   border-top: 1px solid @special_grey-8;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .questionnaire__title {
@@ -47,6 +51,12 @@
 
   border-top: 1px solid @special_grey-8;
   border-bottom: 1px solid @special_grey-8;
+  margin: 0 -20px;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @special_grey-8;
+    margin: 0;
+  }
 }
 
 .questionnaire__container-main {
