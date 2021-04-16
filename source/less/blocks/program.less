@@ -65,6 +65,9 @@
     display: block;
     width: 552px;
     height: 499px;
+    position: relative;
+    top: -166px;
+    right: -376px;
   }
 }
 
@@ -93,6 +96,11 @@
     height: 54px;
     font-size: 20px;
     line-height: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -476px;
+    left: 29px;
   }
 }
 
@@ -146,6 +154,19 @@
         left: 444px;
       }
     }
+
+    @media (min-width: @desktop-width) {
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../../img/index/cat_back-desk.svg");
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 106px;
+        top: 14px;
+        left: 54px;
+      }
+    }
   }
 
   &--pro {
@@ -170,6 +191,19 @@
         height: 200px;
         top: 14px;
         left: 444px;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../../img/index/cat_back-desk-2.svg");
+        background-repeat: no-repeat;
+        width: 134px;
+        height: 100px;
+        top: 14px;
+        left: 40px;
       }
     }
   }

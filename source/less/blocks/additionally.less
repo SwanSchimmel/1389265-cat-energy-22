@@ -18,4 +18,23 @@
   font-size: 24px;
   line-height: 1.08;
   color: @basic_black;
+  display: inline-flex;
+  width: 100%;
+}
+
+.additionally__title--line {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 0;
+    height: 2px;
+    background-color: @basic_green;
+    z-index: -1;
+    overflow: hidden;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
+  }
 }
