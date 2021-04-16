@@ -1,5 +1,9 @@
 .catalog {
   border-top: 1px solid @special_grey-8;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .catalog__title {
@@ -7,6 +11,12 @@
   font-size: 36px;
   line-height: 1;
   color: @basic_black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    margin-top: 65px;
+    margin-bottom: 83px;
+  }
 }
 
 .catalog__list {
@@ -16,8 +26,8 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(auto-fill, 324px);
-    // column-gap: 59px;
-    row-gap: 60px;
+    column-gap: 59px;
+    row-gap: 140px;
   }
 
   @media (min-width: @desktop-width) {
@@ -35,6 +45,13 @@
   align-items: center;
   text-transform: uppercase;
   color: @special_dark-grey-2;
+
+  @media (min-width: @tablet-width) {
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+  }
 }
 
 .catalog__table {
@@ -45,7 +62,19 @@
   text-align: center;
   color: @special_dark-grey;
   position: relative;
-  right: -122px;
+  right: 0;
+  width: 324px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__row td {
+    border-bottom: 1px solid @special_grey;
+  }
 }
 
 .catalog__link {
@@ -62,6 +91,11 @@
   height: 40px;
   text-decoration: none;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 35px;
+    margin-left: 22px;
+  }
 }
 
 .catalog__text {
@@ -105,11 +139,30 @@
 .catalog__item-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 140px);
+  position: relative;
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   background-image: url("../../img/catalog/catalog-1-desktop.png");
+  //   width: 68px;
+  //   height: 86px;
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: none;
+    grid-template-rows: 161px 47px 110px;
+  }
 }
 
 .catalog__item {
   min-height: 210px;
   border-top: 1px solid @special_grey-2;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    height: 430px;
+    background-color: @basic_grey;
+  }
 }
 
 .catalog__item-more {
