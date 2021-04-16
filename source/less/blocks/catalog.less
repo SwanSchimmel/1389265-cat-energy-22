@@ -146,7 +146,7 @@
   //   background-image: url("../../img/catalog/catalog-1-desktop.png");
   //   width: 68px;
   //   height: 86px;
-  }
+  // }
 
   @media (min-width: @tablet-width) {
     grid-template-columns: none;
@@ -173,6 +173,7 @@
 
 .catalog__item-more--icon {
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -181,7 +182,7 @@
     width: 30px;
     height: 2px;
     transform: rotate(-180deg);
-    background-color: #D3D3D3;
+    background-color: @special_grey-9;
   }
 
   &::after {
@@ -192,7 +193,7 @@
     width: 30px;
     height: 2px;
     transform: rotate(90deg);
-    background-color: #D3D3D3;
+    background-color: @special_grey-9;
   }
 }
 
