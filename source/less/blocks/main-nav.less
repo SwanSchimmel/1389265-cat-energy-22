@@ -18,12 +18,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 478px;
   }
 }
 
 .main-nav__item {
   position: relative;
+  margin: 0 -20px;
 
   @media (min-width: @tablet-width) {
     margin-right: 25px;
@@ -54,6 +54,8 @@
       }
     }
  }
+
+
 }
 
 
@@ -99,7 +101,11 @@
 .main-nav__item--white a {
   @media (min-width: @desktop-width) {
     color: @basic_white;
+  }
+}
 
+.main-nav__item--white.main-nav__item--active {
+  @media (min-width: @desktop-width) {
     &::after {
       content: "";
       position: absolute;
@@ -142,8 +148,8 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -12px;
+  left: 18px;
   width: 24px;
   height: 2px;
   background-color: @basic_black;
@@ -151,15 +157,15 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 23px;
-  right: 25px;
+  top: 0;
+  right: 20px;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 8px;
-    left: 1px;
+    top: 20px;
+    left: 13px;
     width: 25px;
     height: 2px;
     background-color: @basic_black;
