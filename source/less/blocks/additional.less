@@ -61,6 +61,12 @@
   @media (min-width: @tablet-width) {
     min-height: 140px;
   }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 555px max-content;
+    min-height: 74px;
+  }
 }
 
 .additional__product {
@@ -120,6 +126,12 @@
     margin-left: 34px;
     margin-top: 28px;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 244px;
+    height: 40px;
+    margin-top: 17px;
+  }
 }
 
 .additional__item-gift {
@@ -133,6 +145,14 @@
     height: 200px;
     margin-top: 69px;
     margin-bottom: 76px;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/catalog/gift-photo-desktop.png");
+    width: 245px;
+    height: 289px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -156,6 +176,12 @@
     text-align: left;
     left: 424px;
   }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    left: 32px;
+    top: 88px;
+  }
 }
 
 .additional__item-gift--icon {
@@ -176,6 +202,12 @@
     &::before {
       top: 29%;
       left: 12%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      left: 33%;
     }
   }
 }
@@ -201,3 +233,18 @@
   }
 }
 
+.additional__data-1 {
+  padding-right: 112px;
+}
+
+.additional__data-2 {
+  padding-right: 188px;
+}
+
+.additional__data-3 {
+  padding-right: 199px;
+}
+
+.additional__data-4 {
+  padding-right: 124px;
+}
