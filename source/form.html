@@ -27,12 +27,16 @@
     </header>
     <main class="page-main">
 
-      <h1 class="visually-hidden title">Кэт энерджи - функциональное
-        питание для котов</h1>
+
+      <h1 class="visually-hidden zero-margin">Кэт энерджи - функциональное
+
+
         <form class="questionnaire__form form" method="GET" action="https://echo.htmlacademy.ru">
           <div class="form__wrapper container">
         <section class="questionnaire">
-          <h2 class="questionnaire__title title">Подбор программы</h2>
+
+          <h2 class="questionnaire__title zero-margin">Подбор программы</h2>
+
           <p class="questionnaire__description">Заполните анкету, и мы подберем
             программу питания для вашего кота</p>
             <div class="questionnaire__container-main">
@@ -71,7 +75,9 @@
 
         </section>
         <fieldset class="host-contacts">
-          <legend class="host-contacts__title host-contacts__title--line title"><span class="form__span">Контактные данные
+
+          <legend class="host-contacts__title decor-line zero-margin"><span class="form__span">Контактные данные
+
             (владельца кота)</span></legend>
             <div class="host-contacts__container-main">
             <div class="host-contacts__container">
@@ -87,13 +93,17 @@
             </p>
           </div>
         </div>
-            <h2 class="host-contacts__title host-contacts__title--line title"><span class="form__span">Комментарий</span></h2>
+
+            <h2 class="host-contacts__title decor-line zero-margin"><span class="form__span">Комментарий</span></h2>
+
             <p>
               <textarea class="host-contacts__text" name="text" id="contact-form-text" placeholder="Расскажите обо всех повадках кота"></textarea>
             </p>
         </fieldset>
         <fieldset class="additionally">
-          <legend class="additionally__title additionally__title--line title"><span class="form__span">Дополнительно</span></legend>
+
+          <legend class="additionally__title decor-line zero-margin"><span class="form__span">Дополнительно</span></legend>
+
           <ul class="form__fields-list">
             <li class="form__fields-item">
              <input class="visually-hidden form__field form__field--checkbox" type="checkbox" name="sugar" id="filter-sugar" checked>
@@ -137,7 +147,7 @@
         </div>
       </div>
         <div class="page-footer__map-block">
-          <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716385132!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617542037048!5m2!1sru!2sru" width="100%" height="400" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716385132!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617542037048!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="page-footer__part-two">
           <div class="page-footer__wrapper container">
@@ -161,21 +171,7 @@
       </div>
      </div>
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
+    <script src="js/main.js">
     </script>
     </body>
 </html>

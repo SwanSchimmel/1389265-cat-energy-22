@@ -127,6 +127,20 @@
   @media (min-width: @tablet-width) {
     min-height: 372px;
   }
+}
+
+.program__title-container {
+  display: flex;
+}
+
+.program__title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.54;
+  color: @basic_black;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
 
   &--slim {
     @media (max-width: @mobile-width-only) {
@@ -135,10 +149,11 @@
         position: absolute;
         top: 14px;
         left: 8px;
-        background-image: url("../../img/index/cat_back.png");
+        background-image: url("../../img/index/cat_back.svg");
         background-repeat: no-repeat;
         width: 50px;
         height: 53px;
+        background-size: contain;
       }
     }
 
@@ -146,12 +161,13 @@
       &::before {
         content: "";
         position: absolute;
-        background-image: url("../../img/index/cat_back-tablet.png");
+        background-image: url("../../img/index/cat_back.svg");
         background-repeat: no-repeat;
         width: 200px;
         height: 211px;
         top: 14px;
         left: 444px;
+        background-size: contain;
       }
     }
 
@@ -159,12 +175,13 @@
       &::before {
         content: "";
         position: absolute;
-        background-image: url("../../img/index/cat_back-desk.svg");
+        background-image: url("../../img/index/cat_back.svg");
         background-repeat: no-repeat;
         width: 100px;
         height: 106px;
         top: 14px;
         left: 54px;
+        background-size: contain;
       }
     }
   }
@@ -175,22 +192,24 @@
       position: absolute;
       top: 14px;
       left: 3px;
-      background-image: url("../../img/index/cat_back-2.png");
+      background-image: url("../../img/index/cat_back-2.svg");
       background-repeat: no-repeat;
       width: 67px;
       height: 50px;
+      background-size: contain;
     }
 
     @media (min-width: @tablet-width) {
       &::before {
         content: "";
         position: absolute;
-        background-image: url("../../img/index/cat_back-tablet-2.png");
+        background-image: url("../../img/index/cat_back-2.svg");
         background-repeat: no-repeat;
         width: 286px;
         height: 200px;
         top: 14px;
         left: 444px;
+        background-size: contain;
       }
     }
 
@@ -198,24 +217,16 @@
       &::before {
         content: "";
         position: absolute;
-        background-image: url("../../img/index/cat_back-desk-2.svg");
+        background-image: url("../../img/index/cat_back-2.svg");
         background-repeat: no-repeat;
         width: 134px;
         height: 100px;
         top: 14px;
         left: 40px;
+        background-size: contain;
       }
     }
   }
-}
-
-.program__title {
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 1.54;
-  color: @basic_black;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .program__description {

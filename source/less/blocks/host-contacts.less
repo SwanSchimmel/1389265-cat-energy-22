@@ -19,10 +19,13 @@
   color: @basic_black;
   display: inline-flex;
   width: 100%;
+  margin-top: 26px;
+  margin-bottom: 35px;
 }
 
-.host-contacts__title--line {
+.decor-line {
   position: relative;
+
   &::after {
     position: absolute;
     content: "";
@@ -60,6 +63,14 @@
   background: yellow;
 
   @media (min-width: @tablet-width) {
-    padding-right: 40px;
+    padding-right: 36px;
+    padding-left: 36px;
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 35px;
+    padding-left: 40px;
+    margin-left: -40px;
   }
 }
