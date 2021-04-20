@@ -23,5 +23,11 @@
       background-size: auto 700px;
       z-index: -1;
     }
+
+    @media (min-resolution: 2dppx) {
+      &::after {
+        background-image: url("./../../img/desktop-cat@2x.jpg");
+      }
+    }
   }
 }

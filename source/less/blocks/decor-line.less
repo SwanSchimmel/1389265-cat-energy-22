@@ -1,0 +1,17 @@
+.decor-line {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 0;
+    height: 2px;
+    background-color: @basic_green;
+    z-index: -1;
+    overflow: hidden;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
+  }
+}
