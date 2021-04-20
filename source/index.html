@@ -12,8 +12,10 @@
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__wrapper container">
           <a class="page-header__logo" href="#">
-            <img class="page-header__logo-mini" src="img/main-logo-mini.svg" width="191" height="38" alt="Кэт энерджи">
-            <img class="page-header__logo-image" src="img/logo-tablet.svg" width="174" height="52" alt="Кэт энерджи">
+            <picture>
+              <source class="page-header__logo-image" media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="page-header__logo-mini" src="img/main-logo-mini.svg" width="191" height="38" alt="Кэт энерджи">
+            </picture>
           </a>
 
           <ul class="main-nav__list">
@@ -40,8 +42,10 @@
             <p class="program__point">Функциональное<br>
               питание для котов</p>
             <p class="program__slogan">Занялся собой? Займись котом!</p>
-            <img class="program__pic" src="img/index/index-can-tablet.png" width="709" height="609" alt="Банка">
-            <img class="program__pic-desktop" src="img/index/index-can.png" width="552" height="499" alt="Банка">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/index/index-can.png 1x, img/index/index-can@2x.png 2x">
+              <img class="program__pic" src="img/index/index-can-tablet.png" srcset="img/index/index-can-tablet@2x.png" width="709" height="609" alt="Банка">
+            </picture>
           </div>
         </header>
         <div class="program__wrapper container">
@@ -106,8 +110,8 @@
           <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
           <div class="slider">
             <ul class="slider-list" id="slides">
-              <li class="slider-item slider-item--show"><img src="img/before-mini-cat.png" width="311" height="232" alt="жирный кот"></li>
-              <li class="slider-item"><img src="img/after-mini-cat.png" width="251" height="240" alt="худой кот"></li>
+              <li class="slider-item slider-item--show"><img src="img/before-mini-cat.png" srcset="img/before-mini-cat@2x.png" width="311" height="232" alt="жирный кот"></li>
+              <li class="slider-item"><img src="img/after-mini-cat.png" srcset="img/after-mini-cat@2x.png" width="251" height="240" alt="худой кот"></li>
             </ul>
             <div class="slider__toggles">
               <p class="slider__before">было</p>

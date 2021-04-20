@@ -11,8 +11,17 @@
 
 .page-body--background {
   @media (min-width: @desktop-width) {
-    background-image: url("../../img/desktop-cat.jpg");
-    background-repeat: no-repeat;
-    background-position: right top;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url("../../img/desktop-cat.jpg");
+      background-repeat: no-repeat;
+      width: 50%;
+      height: 700px;
+      background-size: auto 700px;
+      z-index: -1;
+    }
   }
 }
