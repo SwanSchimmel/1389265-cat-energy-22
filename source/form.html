@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat energy</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="../source/img/favicon/fav_icon-152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../source/img/favicon/fav_icon-180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
@@ -12,8 +16,10 @@
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__wrapper container">
           <a class="page-header__logo" href="#">
-            <img class="page-header__logo-mini" src="img/main-logo-mini.svg" width="191" height="38" alt="Кэт энерджи">
-            <img class="page-header__logo-image" src="img/logo-tablet.svg" width="174" height="52" alt="Кэт энерджи">
+            <picture>
+              <source class="page-header__logo-image" media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="page-header__logo-mini" src="img/main-logo-mini.svg" width="191" height="38" alt="Кэт энерджи">
+            </picture>
           </a>
 
           <ul class="main-nav__list">
@@ -28,7 +34,8 @@
     <main class="page-main">
 
 
-      <h1 class="visually-hidden zero-margin">Кэт энерджи - функциональное
+      <h1 class="visually-hidden title">Кэт энерджи - функциональное
+        питание для котов</h1>
 
 
         <form class="questionnaire__form form" method="GET" action="https://echo.htmlacademy.ru">

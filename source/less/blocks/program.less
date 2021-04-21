@@ -5,6 +5,11 @@
   height: 437px;
   width: 320px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("./../../img/index/cat-top@2x.png");
+    background-size: cover;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: none;
     width: 100%;
@@ -54,17 +59,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.program__pic-desktop {
-  display: none;
-
-  @media (min-width: @desktop-width) {
-    display: block;
-    width: 552px;
-    height: 499px;
     position: relative;
     top: -166px;
     right: -376px;
