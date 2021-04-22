@@ -121,8 +121,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 23px;
-  right: 25px;
+  top: 0;
+  right: 20px;
   z-index: 2;
   display: block;
   width: 40px;
@@ -143,8 +143,8 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: -12px;
-  left: 18px;
+  top: 10px;
+  left: 15px;
   width: 24px;
   height: 2px;
   background-color: @basic_black;
@@ -152,8 +152,8 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 0;
-  right: 20px;
+  top: -2px;
+  right: 19px;
 
   &::before,
   &::after {
