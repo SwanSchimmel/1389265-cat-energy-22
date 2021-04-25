@@ -3,10 +3,6 @@
   padding: 0;
   min-height: 334px;
 
-  @media (min-width: @tablet-width) {
-    min-height: 347px;
-  }
-
   @media (min-width: @desktop-width) {
     min-height: 292px;
   }
@@ -22,10 +18,17 @@
   width: 100%;
   margin-top: 22px;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 57px;
+  }
 }
 
 .decor-line {
   position: relative;
+
   &::after {
     position: absolute;
     content: "";

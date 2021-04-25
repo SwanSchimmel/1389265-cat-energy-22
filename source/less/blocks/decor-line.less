@@ -14,4 +14,16 @@
     margin-right: calc(50% - 50vw);
     width: 100vw;
   }
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      left: -20px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      left: 0;
+    }
+  }
 }

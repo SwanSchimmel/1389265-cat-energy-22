@@ -11,6 +11,11 @@
     cursor: pointer;
     user-select: none;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .form__input-radio + .form__description--decoration::before {
@@ -22,6 +27,13 @@
   height: 30px;
   border: 1px solid @special_grey;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -43px;
+    top: -6px;
+  }
 }
 
 .form__input-radio:checked + .form__description--decoration::after {
@@ -33,6 +45,13 @@
   height: 14px;
   background-color: @basic_green;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+    left: -32px;
+    top: 5px;
+  }
 }
 
 .form__input {
@@ -68,6 +87,7 @@
 
   @media (min-width: @tablet-width) {
     width: 221px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: @desktop-width) {
@@ -91,8 +111,15 @@
   height: 40px;
   justify-content: center;
   font-family: inherit;
-  margin-top: -53px;
+
   margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    width: 282px;
+    height: 52px;
+    font-size: 20px;
+    margin-bottom: 72px;
+  }
 }
 
 .form__necessarily {
@@ -105,11 +132,19 @@
   text-align: center;
   color: @basic_black;
   margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 61px;
+  }
 }
 
 .form__container {
+  margin-top: -53px;
+
   @media (min-width: @tablet-width) {
     display: flex;
+    align-items: baseline;
+    margin-top: -78px;
   }
 }
 
@@ -132,6 +167,11 @@
 .form__container-paragraph {
   display: flex;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .form__description--checkbox {
@@ -149,6 +189,11 @@
   width: 30px;
   height: 30px;
   border: 1px solid @special_grey;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form__field--checkbox:checked + .form__description--checkbox::after {
@@ -161,6 +206,11 @@
   background-image: url("../../img/icons/tick.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-width: @tablet-width) {
+    top: 8px;
+    left: -34px;
+  }
 }
 
 .form__span {

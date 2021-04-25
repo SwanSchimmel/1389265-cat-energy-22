@@ -1,9 +1,10 @@
 .program__header {
   background-image: url("../img/cat-top.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 437px;
-  width: 320px;
+  width: 100%;
+  background-position: 50% 50%;
 
   @media (min-resolution: 2dppx) {
     background-image: url("./../../img/index/cat-top@2x.png");
@@ -134,33 +135,35 @@
   color: @basic_black;
   text-transform: uppercase;
   text-align: center;
-  position: relative;
+  display: inline-flex;
+  align-items: center;
 
   &--slim {
     @media (max-width: @mobile-width-only) {
       &::before {
         content: "";
-        position: absolute;
-        top: 14px;
-        left: 8px;
+        position: relative;
         background-image: url("../../img/index/cat_back.svg");
         background-repeat: no-repeat;
         width: 50px;
         height: 53px;
         background-size: contain;
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
       }
     }
 
     @media (min-width: @tablet-width) {
       &::before {
         content: "";
-        position: absolute;
+        position: relative;
         background-image: url("../../img/index/cat_back.svg");
         background-repeat: no-repeat;
         width: 200px;
         height: 211px;
-        top: 14px;
-        left: 444px;
         background-size: contain;
       }
     }
@@ -168,13 +171,11 @@
     @media (min-width: @desktop-width) {
       &::before {
         content: "";
-        position: absolute;
+        position: relative;
         background-image: url("../../img/index/cat_back.svg");
         background-repeat: no-repeat;
         width: 100px;
         height: 106px;
-        top: 14px;
-        left: 54px;
         background-size: contain;
       }
     }
@@ -183,26 +184,27 @@
   &--pro {
     &::before {
       content: "";
-      position: absolute;
-      top: 14px;
-      left: 3px;
+      position: relative;
       background-image: url("../../img/index/cat_back-2.svg");
       background-repeat: no-repeat;
       width: 67px;
       height: 50px;
       background-size: contain;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 30px;
+      flex-shrink: 0;
     }
 
     @media (min-width: @tablet-width) {
       &::before {
         content: "";
-        position: absolute;
+        position: relative;
         background-image: url("../../img/index/cat_back-2.svg");
         background-repeat: no-repeat;
         width: 286px;
         height: 200px;
-        top: 14px;
-        left: 444px;
         background-size: contain;
       }
     }
@@ -210,15 +212,44 @@
     @media (min-width: @desktop-width) {
       &::before {
         content: "";
-        position: absolute;
+        position: relative;
         background-image: url("../../img/index/cat_back-2.svg");
         background-repeat: no-repeat;
         width: 134px;
         height: 100px;
-        top: 14px;
-        left: 40px;
         background-size: contain;
       }
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .program__content {
+    max-width: 377px;
+  }
+
+  .program__title {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    &::before {
+      top: 40px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program__content {
+    max-width: none;
+  }
+
+  .program__title {
+    width: auto;
+    flex-direction: row;
+
+    &::before {
+      top: 0;
     }
   }
 }
