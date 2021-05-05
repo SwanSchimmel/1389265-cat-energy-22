@@ -1,9 +1,11 @@
 .example {
   background-color: @special_grey-3;
+  margin-top: 42px;
 }
 
 .example__table {
   color: @special_grey;
+  padding-top: 9px;
 }
 
 .example__title {
@@ -11,6 +13,8 @@
   font-size: 36px;
   line-height: 1.1;
   color: @basic_black;
+  margin: 27px 0 33px 0;
+  padding-top: 29px;
 }
 
 .example__description {
@@ -38,7 +42,15 @@
   text-align: center;
   color: @special_dark-grey;
   padding: 8px;
-  padding-top: 0px;
+  padding-top: 0;
+  position: relative;
+  top: -11px;
+}
+
+.example__helper {
+  display: inline-block;
+  background-color: @special_grey-3;
+  padding: 0 13px;
 }
 
 .example__price {
@@ -64,9 +76,8 @@
 }
 
 .example__table .example__heading {
-  border: 1px solid #CDCDCD;
+  border: 1px solid @special_grey;
   box-sizing: border-box;
   border-radius: 3px;
-  border-bottom: none;
 }
 
